@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@media (prefers-color-scheme: dark) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #121212;
+    height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: hidden;
+  }
+  body #root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body #root a {
+    text-decoration: none;
+  }
+  body #root .app-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #root .app-container .container {
+    width: 71.40625%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+  }
+  body #root .app-container .statistics-container {
+    width: clamp(380px, 39.5833333333vw, 1520px);
+    height: clamp(400.5px, 41.71875vw, 1602px);
+    border: 2px solid #373737;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    background-color: #1e1e1e;
+  }
+  body #root .app-container .statistics-container .stats-upper {
+    width: 100%;
+    height: clamp(25px, 2.6041666667vw, 100px);
+    color: #75DDFE;
+    display: flex;
+    border-bottom: 2px solid #373737;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body #root .app-container .statistics-container .stats-upper .chat-header-s {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(11.5px, 1.1979166667vw, 46px);
+    margin-left: clamp(8px, 0.8333333333vw, 32px);
+  }
+  body #root .app-container .statistics-container .stats-upper .additional-buttons-s {
+    color: rgba(135, 226, 253, 0.9);
+    margin-right: clamp(16px, 1.6666666667vw, 64px);
+    font-size: clamp(10px, 1.0416666667vw, 40px);
+  }
+  body #root .app-container .statistics-container .stats-upper .trash-i {
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  body #root .app-container .statistics-container .stats-upper .trash-i:hover {
+    color: #00c3ff;
+  }
+  body #root .app-container .statistics-container .bot-selection-stats {
+    display: flex;
+    flex-direction: column;
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: clamp(103.5px, 10.78125vw, 414px);
+    margin-top: clamp(16px, 1.6666666667vw, 64px);
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats {
+    width: clamp(100px, 10.4166666667vw, 400px);
+    height: clamp(103.5px, 10.78125vw, 414px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #373737;
+    background-color: #2E2E2E;
+    border-radius: 7px;
+    margin-left: clamp(16px, 1.6666666667vw, 64px);
+    margin-right: clamp(16px, 1.6666666667vw, 64px);
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container {
+    display: flex;
+    flex-direction: column;
+    width: clamp(59px, 6.1458333333vw, 236px);
+    height: clamp(10px, 1.0416666667vw, 40px);
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container .stats-btn, body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container .message-btn, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container .stats-btn, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container .message-btn, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container .stats-btn, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container .message-btn {
+    width: 100%;
+    color: white;
+    border-radius: 2px;
+    font-size: clamp(8px, 0.8333333333vw, 32px);
+    border: none;
+    background-color: #23A1FC;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container .stats-btn:hover, body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container .message-btn:hover, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container .stats-btn:hover, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container .message-btn:hover, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container .stats-btn:hover, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container .message-btn:hover {
+    background-color: #0089eb;
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container .message-btn, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container .message-btn, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container .message-btn {
+    margin-top: clamp(8px, 0.8333333333vw, 32px);
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container .stats-btn, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container .stats-btn, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container .stats-btn {
+    margin-top: clamp(8px, 0.8333333333vw, 32px);
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container .robot-content, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container .robot-content, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container .robot-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container .robot-content .robot-name, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container .robot-content .robot-name, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container .robot-content .robot-name {
+    margin-top: clamp(4px, 0.4166666667vw, 16px);
+    font-size: clamp(9.5px, 0.9895833333vw, 38px);
+  }
+  body #root .app-container .statistics-container .bot-selection-stats .selection-r-1 .bot-stats .button-container .robot-content .bot-img, body #root .app-container .statistics-container .bot-selection-stats .selection-r-2 .bot-stats .button-container .robot-content .bot-img, body #root .app-container .statistics-container .bot-selection-stats .selection-r-3 .bot-stats .button-container .robot-content .bot-img {
+    margin-top: clamp(15px, 1.5625vw, 60px);
+  }
+}/*# sourceMappingURL=stats.css.map */

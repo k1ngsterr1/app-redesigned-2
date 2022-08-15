@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+// DARK THEME
+$darkBG: #121212
+$darkForMenu: #1e1e1e
+$darkForBorder: #373737
+$darkForHeader: #1D1D1D
+$darkForUpperHeader: #272727
+$darkForSearch: #2C2C2C
+
+// MAIN COLORS FOR DARK
+$blueForDark: #75DDFE
+$blueForBorder: #87C1D3
+$gradient: linear-gradient(91.87deg, #24CFFF 1.95%, #75DDFE 100.18%)
+$white: white
+$forText: rgb(255, 255, 255, 0.6)
+$forTextMenu: rgb(255, 255, 255, 0.55)
+$forNotification: rgb(255, 255, 255, 0.45)
+$darkerForText: rgb(255, 255, 255, 0.38)
+$darkerForDots: rgb(255, 255, 255, 0.35)
+
+// FOR SWITCH
+$mainSwitch: #9066FF
+$secondForSwitch: #D3BFFF
+$moon: #F7FF97
+
+$mainLightSwitch: #66B6FF
+$secondForLightSwitch: #FFEF62
+$lightBorder: #E3D23A
+
+// LIGHT THEME
+
+$mainBlueLight: #00B9FF
+$additionalButtons: #0FCBF4
+$lightBlueBorder: #24CFFF
+$notificationLight: #FF5324
+$lightBG: #E0F7FE
+$dotsLight: #D6E1E4
+$containersBGandSearchBar: #F2FCFF
+$upperLight: #F5FCFF
+$headerLight: white
+$borderLight: rgb(153, 153, 153, 0.2)
+$forLightText: #121212
+$someText: #999999
+$lightForMessage: rgb(0, 0, 0, 0.7)
+
+// Styles
+
+// For Dark
+
+@media (prefers-color-scheme: dark)
+
+    *
+        margin: 0
+        padding: 0
+        box-sizing: border-box
+
+    body
+        background: $darkBG
+        height: 100vh
+        font-family: 'Roboto Condensed', sans-serif
+        overflow-x: hidden
+        scroll-behavior: hidden
+
+        #root
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+            a
+                text-decoration: none
+
+            .app-container
+                width: 100%
+                height: 100vh
+                display: flex
+                flex-direction: column
+                align-items: center
+
+                .container
+                    width: 71.40625%
+                    height: 100vh
+                    display: flex
+                    justify-content: center
+                    align-items: flex-start
+                    margin: auto
+
+                .friends-container
+                    width: clamp(380px,39.583333333333336vw, 1520px)
+                    height: clamp(488px,50.833333333333336vw, 1952px)
+                    border: 2px solid $darkForBorder
+                    display: flex
+                    flex-direction: column
+                    border-radius: 7px
+                    margin-top: clamp(32px,3.3333333333333335vw,128px)
+                    background-color: $darkForMenu
+
+                    .upper-container-f
+                        width: 100%
+                        height: clamp(25px,2.6041666666666665vw,100px)
+                        color: $blueForDark
+                        display: flex
+                        border-bottom: 2px solid $darkForBorder
+                        align-items: center
+                        justify-content: space-between
+
+                        .chat-header-f
+                            font-family: 'Roboto Condensed'
+                            font-style: normal
+                            font-weight: 400
+                            font-size: clamp(11.5px,1.1979166666666667vw,46px)
+                            margin-left: clamp(8px,0.8333333333333334vw,32px)
+
+                        .additional-buttons-f
+                            color: rgb(135, 226, 253, 0.9)
+                            margin-right: clamp(16px,1.6666666666666667vw,64px)
+                            font-size: clamp(10px,1.0416666666666667vw,40px)
+
+                        .trash-i
+                            transition: 0.3s all
+                            cursor: pointer
+                            &:hover
+                                color: #00c3ff
+
+                    .friends-box
+                        width: 100%
+                        height: clamp(32px,3.3333333333333335vw, 128px)
+                        display: flex
+                        align-items: center
+                        border-bottom: 2px solid $darkForBorder
+                        transition: 0.2s all
+                        &:hover
+                            background-color: #292929
+
+                        .friend-png
+                            width: clamp( 23px,2.3958333333333335vw,92px)
+                            height: clamp( 23px,2.3958333333333335vw,92px)
+                            margin-left: clamp(8px,0.8333333333333334vw,32px)
+                            user-select: none
+
+                .friends-content
+                    color: $white
+                    display: flex
+                    align-items: center
+                    height: 100%
+                    margin-left: clamp(8px,0.8333333333333334vw,32px)
+
+                    .friend-name
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: clamp(10px,1.0416666666666667vw,40px)
+                        color: #FFFFFF
+
+                    .write-to-f
+                        width: clamp(70px,7.291666666666667vw,280px)
+                        height: clamp(12.5px,1.3020833333333333vw,50px)
+                        font-size: clamp(8.5px,0.8854166666666666vw, 34px)
+                        color: $white
+                        border: none
+                        outline: none
+                        margin-left: clamp(32px,3.3333333333333335vw,128px)
+                        border-radius: 2px
+                        background-color: #23A1FC
+                        transition: 0.3s all
+                        &:hover
+                            background-color: #0089eb

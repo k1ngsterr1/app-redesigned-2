@@ -9,6 +9,9 @@ import { faBrain } from "@fortawesome/free-solid-svg-icons";
 import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
 import { faChartColumn } from "@fortawesome/free-solid-svg-icons";
 
+// Links
+import { Link } from "react-router-dom";
+
 const Menu = () => {
   return (
     <aside className="menu">
@@ -19,30 +22,30 @@ const Menu = () => {
         <p className="condition"> Online</p>
       </div>
       <div className="menu-tabs">
-        <a className="your-bots">
+        <Link className="your-bots" to="/">
           <FontAwesomeIcon
             className="brain-icon"
             icon={faBrain}
           ></FontAwesomeIcon>
           <p className="your-bots-p">Your Bots</p>
           <figure className="notification-bubble">+5</figure>
-        </a>
-        <a className="friends">
+        </Link>
+        <Link className="friends" to="/friends">
           {" "}
           <FontAwesomeIcon
             className="friends-icon"
             icon={faUserFriends}
           ></FontAwesomeIcon>
           <p className="your-friends-p">Friends</p>
-        </a>
-        <a className="stats">
+        </Link>
+        <Link className="stats" to="/statistics">
           {" "}
           <FontAwesomeIcon
             className="stats-icon"
             icon={faChartColumn}
           ></FontAwesomeIcon>
           <p className="your-stats-p">Statistics</p>
-        </a>
+        </Link>
         {/* Switch */}
         <div className="mode-switch">
           <p className="switch-mode-p">Mode Switch</p>

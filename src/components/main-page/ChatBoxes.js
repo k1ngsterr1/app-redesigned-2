@@ -36,6 +36,11 @@ const ChatBoxes = () => {
             <div className="message">Hi! I can solve math problems...</div>
           </div>
         </div>
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+        </div>
       </div>
       <div className="messanger-box">
         <img className="user-png" src={user}></img>
@@ -49,6 +54,11 @@ const ChatBoxes = () => {
             <div className="message">Hi! I can solve math problems...</div>
           </div>
         </div>
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+        </div>
       </div>
       <div className="messanger-box">
         <img className="user-png" src={user}></img>
@@ -60,6 +70,65 @@ const ChatBoxes = () => {
               <p className="task">Math</p>
             </div>
             <div className="message">Hi! I can solve math problems...</div>
+          </div>
+          <div className="dots">
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
+        </div>
+      </div>{" "}
+      <div className="messanger-box">
+        <img className="user-png" src={user}></img>
+        <div className="user-message">
+          <div className="user-message-content">
+            <div className="user-name-and-task">
+              <div className="user-name">John The Robot</div>
+              <div className="separator"></div>
+              <p className="task">Math</p>
+            </div>
+            <div className="message">Hi! I can solve math problems...</div>
+          </div>
+          <div className="dots">
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
+        </div>
+      </div>{" "}
+      <div className="messanger-box">
+        <img className="user-png" src={user}></img>
+        <div className="user-message">
+          <div className="user-message-content">
+            <div className="user-name-and-task">
+              <div className="user-name">John The Robot</div>
+              <div className="separator"></div>
+              <p className="task">Math</p>
+            </div>
+            <div className="message">Hi! I can solve math problems...</div>
+          </div>
+          <div className="dots">
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
+        </div>
+      </div>{" "}
+      <div className="messanger-box">
+        <img className="user-png" src={user}></img>
+        <div className="user-message">
+          <div className="user-message-content">
+            <div className="user-name-and-task">
+              <div className="user-name">John The Robot</div>
+              <div className="separator"></div>
+              <p className="task">Math</p>
+            </div>
+            <div className="message">Hi! I can solve math problems...</div>
+          </div>
+          <div className="dots">
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
           </div>
         </div>
       </div>{" "}
@@ -75,44 +144,10 @@ const ChatBoxes = () => {
             <div className="message">Hi! I can solve math problems...</div>
           </div>
         </div>
-      </div>{" "}
-      <div className="messanger-box">
-        <img className="user-png" src={user}></img>
-        <div className="user-message">
-          <div className="user-message-content">
-            <div className="user-name-and-task">
-              <div className="user-name">John The Robot</div>
-              <div className="separator"></div>
-              <p className="task">Math</p>
-            </div>
-            <div className="message">Hi! I can solve math problems...</div>
-          </div>
-        </div>
-      </div>{" "}
-      <div className="messanger-box">
-        <img className="user-png" src={user}></img>
-        <div className="user-message">
-          <div className="user-message-content">
-            <div className="user-name-and-task">
-              <div className="user-name">John The Robot</div>
-              <div className="separator"></div>
-              <p className="task">Math</p>
-            </div>
-            <div className="message">Hi! I can solve math problems...</div>
-          </div>
-        </div>
-      </div>{" "}
-      <div className="messanger-box">
-        <img className="user-png" src={user}></img>
-        <div className="user-message">
-          <div className="user-message-content">
-            <div className="user-name-and-task">
-              <div className="user-name">John The Robot</div>
-              <div className="separator"></div>
-              <p className="task">Math</p>
-            </div>
-            <div className="message">Hi! I can solve math problems...</div>
-          </div>
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
         </div>
       </div>
       <div className="messanger-box">
@@ -127,18 +162,10 @@ const ChatBoxes = () => {
             <div className="message">Hi! I can solve math problems...</div>
           </div>
         </div>
-      </div>
-      <div className="messanger-box">
-        <img className="user-png" src={user}></img>
-        <div className="user-message">
-          <div className="user-message-content">
-            <div className="user-name-and-task">
-              <div className="user-name">John The Robot</div>
-              <div className="separator"></div>
-              <p className="task">Math</p>
-            </div>
-            <div className="message">Hi! I can solve math problems...</div>
-          </div>
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
         </div>
       </div>
       <div className="messanger-box">
@@ -152,6 +179,29 @@ const ChatBoxes = () => {
             </div>
             <div className="message">Hi! I can solve math problems...</div>
           </div>
+        </div>
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
+        </div>
+      </div>
+      <div className="messanger-box">
+        <img className="user-png" src={user}></img>
+        <div className="user-message">
+          <div className="user-message-content">
+            <div className="user-name-and-task">
+              <div className="user-name">John The Robot</div>
+              <div className="separator"></div>
+              <p className="task">Math</p>
+            </div>
+            <div className="message">Hi! I can solve math problems...</div>
+          </div>
+        </div>
+        <div className="dots">
+          <div className="dot"></div>
+          <div className="dot"></div>
+          <div className="dot"></div>
         </div>
       </div>
     </main>
