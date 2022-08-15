@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  height: 100vh;
+  font-family: "Roboto Condensed", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: hidden;
+}
+body #root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body #root .app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #root .app-container .container {
+  width: 71.40625%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+}
+body #root .app-container .chat-container {
+  width: clamp(380px, 39.5833333333vw, 1520px);
+  height: clamp(488px, 50.8333333333vw, 1952px);
+  border: 2px solid #373737;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  background-color: #1e1e1e;
+}
+body #root .app-container .chat-container .upper-container {
+  width: 100%;
+  height: clamp(25px, 2.6041666667vw, 100px);
+  color: #75DDFE;
+  display: flex;
+  border-bottom: 2px solid #373737;
+  align-items: center;
+  justify-content: space-between;
+}
+body #root .app-container .chat-container .upper-container .chat-header {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(11.5px, 1.1979166667vw, 46px);
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+body #root .app-container .chat-container .upper-container .additional-buttons {
+  color: rgba(135, 226, 253, 0.9);
+  margin-right: clamp(16px, 1.6666666667vw, 64px);
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+  width: clamp(62.5px, 6.5104166667vw, 250px);
+}
+body #root .app-container .chat-container .upper-container .userGroup-i, body #root .app-container .chat-container .upper-container .trash-i, body #root .app-container .chat-container .upper-container .robot-i {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+body #root .app-container .chat-container .upper-container .userGroup-i:hover, body #root .app-container .chat-container .upper-container .trash-i:hover, body #root .app-container .chat-container .upper-container .robot-i:hover {
+  color: #00c3ff;
+}
+body #root .app-container .chat-container .messanger-box {
+  width: 100%;
+  height: clamp(32px, 3.3333333333vw, 128px);
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #373737;
+  transition: 0.2s all;
+}
+body #root .app-container .chat-container .messanger-box:hover {
+  background-color: #292929;
+}
+body #root .app-container .chat-container .messanger-box .user-png {
+  width: clamp(23px, 2.3958333333vw, 92px);
+  height: clamp(23px, 2.3958333333vw, 92px);
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+body #root .app-container .chat-container .messanger-box .user-message {
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+body #root .app-container .chat-container .messanger-box .user-message .user-name {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(9px, 0.9375vw, 36px);
+  color: #FFFFFF;
+}
+body #root .app-container .chat-container .messanger-box .user-message .message {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(8px, 0.8333333333vw, 32px);
+  margin-top: clamp(5.5px, 0.5729166667vw, 22px);
+  color: rgba(255, 255, 255, 0.38);
+}
+body #root .app-container .chat-container .messanger-box .user-message .user-name-and-task {
+  display: flex;
+  align-items: center;
+}
+body #root .app-container .chat-container .messanger-box .user-message .separator {
+  width: 1px;
+  height: clamp(8px, 0.8333333333vw, 32px);
+  margin-right: clamp(8px, 0.8333333333vw, 32px);
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+  background-color: white;
+}
+body #root .app-container .chat-container .messanger-box .user-message .task {
+  color: #75DDFE;
+}
+body #root .app-container .chat-container a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  margin-top: 0px;
+  height: clamp(74.5px, 7.7604166667vw, 298px);
+  background-color: #1D1D1D;
+}
+.header .upper-header {
+  width: 74.6354166667%;
+  height: clamp(54.5px, 5.6770833333vw, 218px);
+  margin: auto;
+  margin-top: clamp(7.5px, 0.78125vw, 30px);
+  margin-bottom: clamp(7.5px, 0.78125vw, 30px);
+  background-color: #272727;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .search-bar {
+  position: relative;
+  width: clamp(255px, 26.5625vw, 1020px);
+  height: clamp(18px, 1.875vw, 72px);
+  border: 2px solid #373737;
+  border-radius: 4px;
+  background-color: #2C2C2C;
+  color: white;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  padding-left: clamp(20px, 2.0833333333vw, 80px);
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+}
+.header .search-bar:focus {
+  border: 2px solid #5a5a5a;
+  outline: none;
+}
+.header .search-bar-after {
+  position: relative;
+  width: clamp(255px, 26.5625vw, 1020px);
+  height: clamp(18px, 1.875vw, 72px);
+  border: 2px solid #373737;
+  border-radius: 4px;
+  background-color: #2C2C2C;
+  color: white;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  padding-left: clamp(5px, 0.5208333333vw, 20px);
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+}
+.header .search-bar-after:focus {
+  border: 2px solid #5a5a5a;
+  outline: none;
+}
+.header .logo {
+  width: clamp(140.5px, 14.6354166667vw, 562px);
+  height: clamp(31px, 3.2291666667vw, 124px);
+  margin-left: clamp(16px, 1.6666666667vw, 64px);
+}
+.header .search-bar::-moz-placeholder {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+}
+.header .search-bar:-ms-input-placeholder {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+}
+.header .search-bar::placeholder {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+}
+.header input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+.header .icon-2 {
+  position: absolute;
+  top: clamp(28.5px, 2.96875vw, 104px);
+  left: clamp(335.5px, 34.6379166667vw, 1342px);
+  width: clamp(13px, 1.3541666667vw, 52px);
+  height: clamp(13px, 1.3541666667vw, 52px);
+  z-index: 10;
+}
+.header .icon-2-invisible {
+  display: none;
+}
+.header .user, .header .settings {
+  display: flex;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #75DDFE;
+}
+.header .user-photo {
+  width: clamp(14px, 1.4583333333vw, 56px);
+  height: clamp(14px, 1.4583333333vw, 56px);
+  margin-right: clamp(4px, 0.5166666667vw, 16px);
+}
+.header .settings {
+  margin-right: 32px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  transition: 0.3s all;
+}
+.header .settings:hover {
+  background-color: #333333;
+}
+.header .user {
+  width: clamp(70px, 7.2916666667vw, 280px);
+  display: flex;
+  justify-content: center;
+  height: clamp(20px, 2.0833333333vw, 80px);
+  border-radius: 4px;
+  transition: 0.3s all;
+}
+.header .user:hover {
+  background-color: #333333;
+}
+.header .settings-text, .header .user-text {
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+  transition: 0.2s all;
+}
+.header .settings-text:hover, .header .user-text:hover {
+  color: white;
+  color: #18c9ff;
+}
+.header .gear {
+  font-size: clamp(12.5px, 1.3020833333vw, 50px);
+  margin-right: clamp(4px, 0.4166666667vw, 16px);
+}
+
+.menu {
+  width: clamp(121px, 12.6041666667vw, 484px);
+  background-color: transparent;
+  display: flex;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  margin-right: clamp(32px, 3.3333333333vw, 128px);
+  flex-direction: column;
+}
+.menu .user-profile-tab {
+  width: 100%;
+  height: clamp(27.5px, 2.8645833333vw, 110px);
+  display: flex;
+  align-items: center;
+  background: #1E1E1E;
+  border: 2px solid #373737;
+  border-radius: 7px;
+}
+.menu .user-profile-tab .user-img {
+  width: clamp(16px, 1.6666666667vw, 64px);
+  height: clamp(16px, 1.6666666667vw, 64px);
+  border: 1px solid #75DDFE;
+  border-radius: 100%;
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+.menu .user-profile-tab .username {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+  color: #75DDFE;
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+.menu .user-profile-tab .separator-u {
+  background-color: #fff;
+  width: 1px;
+  height: clamp(8.5px, 0.8854166667vw, 34px);
+  margin-left: clamp(4px, 0.4166666667vw, 16px);
+}
+.menu .user-profile-tab .condition {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(7.5px, 0.78125vw, 30px);
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: clamp(4px, 0.4166666667vw, 16px);
+}
+.menu .menu-tabs {
+  display: flex;
+  flex-direction: column;
+}
+.menu .menu-tabs .your-bots, .menu .menu-tabs .friends, .menu .menu-tabs .stats, .menu .menu-tabs .mode-switch {
+  width: 100%;
+  height: clamp(20.735px, 2.1598958333vw, 82.94px);
+  background: #1E1E1E;
+  border: 2px solid #373737;
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s all;
+}
+.menu .menu-tabs .your-bots:hover, .menu .menu-tabs .friends:hover, .menu .menu-tabs .stats:hover, .menu .menu-tabs .mode-switch:hover {
+  border: 2px solid #87C1D3;
+  background: #2E2E2E;
+}
+.menu .menu-tabs .your-bots {
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+.menu .menu-tabs .friends, .menu .menu-tabs .stats, .menu .menu-tabs .mode-switch, .menu .menu-tabs .create-bot {
+  margin-top: clamp(8.5px, 0.8854166667vw, 34px);
+}
+.menu .menu-tabs .your-bots {
+  display: flex;
+  align-items: center;
+  color: #75DDFE;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+}
+.menu .menu-tabs .your-bots .your-bots-p {
+  color: rgba(255, 255, 255, 0.55);
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+.menu .menu-tabs .your-bots .brain-icon {
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+.menu .menu-tabs .your-bots .notification-bubble {
+  width: clamp(15px, 1.5625vw, 60px);
+  height: clamp(8.5px, 0.8854166667vw, 34px);
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 20px;
+  margin-left: clamp(27px, 2.96875vw, 104px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(7.5px, 0.78125vw, 30px);
+  color: rgba(255, 255, 255, 0.7);
+}
+.menu .menu-tabs .friends {
+  display: flex;
+  align-items: center;
+  color: #75DDFE;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+}
+.menu .menu-tabs .friends .your-friends-p {
+  color: rgba(255, 255, 255, 0.55);
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+.menu .menu-tabs .friends .friends-icon {
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+.menu .menu-tabs .stats {
+  display: flex;
+  align-items: center;
+  color: #75DDFE;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+}
+.menu .menu-tabs .stats .your-stats-p {
+  color: rgba(255, 255, 255, 0.55);
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+.menu .menu-tabs .stats .stats-icon {
+  margin-left: clamp(8.5px, 0.8854166667vw, 34px);
+}
+.menu .menu-tabs .switch-mode-p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+  color: rgba(255, 255, 255, 0.55);
+}
+.menu .menu-tabs input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  margin-left: clamp(24px, 2.5vw, 96px);
+  cursor: pointer;
+  text-indent: -9999px;
+  width: clamp(27.5px, 2.8645833333vw, 110px);
+  height: clamp(10.405px, 1.0838541667vw, 41.62px);
+  background: #9066FF;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: clamp(0.75px, 0.078125vw, 3px);
+  left: clamp(2.5px, 0.2604166667vw, 10px);
+  width: clamp(6.92px, 0.7208333333vw, 27.68px);
+  height: clamp(6.92px, 0.7208333333vw, 27.68px);
+  background: #F7FF97;
+  border: 2px solid white;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #66B6FF;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  background-color: #FFEF62;
+  border: 2px solid #E3D23A;
+  transform: translateX(-100%);
+}
+
+.create-bot {
+  width: 100%;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  height: clamp(20.735px, 2.1598958333vw, 82.94px);
+  font-size: clamp(12px, 1.25vw, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(91.87deg, #24CFFF 1.95%, #75DDFE 100.18%);
+  border-radius: 22px;
+  transition: 0.3s all;
+}
+.create-bot:hover {
+  color: white;
+}
+
+.right {
+  width: clamp(121px, 12.6041666667vw, 484px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  margin-left: clamp(32px, 3.3333333333vw, 128px);
+  z-index: 20px;
+  height: clamp(200px, 20.8333333333vw, 800px);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1450px) {
+  .icon-2 {
+    width: 20px !important;
+    height: 20px !important;
+    top: 48px !important;
+    left: 552px !important;
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1377px) {
+  .icon-2 {
+    width: 19px !important;
+    height: 19px !important;
+    top: 43px !important;
+    left: 491px !important;
+  }
+}
+@media screen and (max-width: 1366px) and (min-width: 1290px) {
+  .icon-2 {
+    width: 17px !important;
+    height: 17px !important;
+    top: 41px !important;
+    left: 464px !important;
+  }
+  label:after {
+    top: 0.9px !important;
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 1034px) {
+  .icon-2 {
+    width: 16px !important;
+    height: 16px !important;
+    top: 38px !important;
+    left: 432px !important;
+  }
+}/*# sourceMappingURL=main-app-styles.css.map */
